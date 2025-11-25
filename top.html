@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top utilizatori</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>Top utilizatori</h1>
+<p>Clasament în funcție de exercițiile rezolvate</p>
+</header>
+
+<nav>
+<a href="index.html">Acasă</a>
+<a href="teorie.html">Teorie</a>
+<a href="exercitii.html">Exerciții</a>
+<a href="top.html">Top utilizatori</a>
+<a href="login.html">Login</a>
+</nav>
+
+<div class="container">
+<div class="post" id="top-list">
+<h2>Clasament</h2>
+<ul id="top-ul"></ul>
+</div>
+</div>
+
+<footer>
+© 2025 – Proiect realizat de Arvinte Irina & Andreea Țancoc
+</footer>
+
+<script>
+let scores = JSON.parse(localStorage.getItem('scores') || "{}");
+let sortedUsers = Object.entries(scores).sort((a,b)=>b[1]-a[1]);
+let ul = document.getElementById("top-ul");
+sortedUsers.forEach(([user,score])=>{
+    let li = document.createElement("li");
+    li.textContent = `${user} – ${score} puncte`;
+    ul.appendChild(li);
+});
+</script>
+</body>
+</html>

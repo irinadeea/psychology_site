@@ -1,77 +1,80 @@
-/* Stil general */
 body {
     margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
-    background: #f4f4f4;
+    background: #f4f4f9;
     color: #333;
 }
 
-/* Header */
 header {
     background: linear-gradient(135deg, #4a148c, #880e4f);
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 40px 20px;
 }
 
-header h1 { margin: 0; font-size: 42px; font-weight: 700; }
-header p { margin: 10px 0 0; font-size: 18px; opacity: 0.9; }
+header h1 {
+    margin: 0;
+    font-size: 42px;
+}
 
-/* Navigare */
+header p {
+    margin: 10px 0 0;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
 nav {
     background: #222;
+    padding: 15px;
     display: flex;
     justify-content: center;
-    gap: 20px;
-    padding: 10px 0;
+    gap: 25px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: all 0.3s;
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: 0.3s;
 }
 
 nav a:hover {
     background: #880e4f;
-    transform: scale(1.1);
+    color: #fff;
 }
 
-/* Container */
 .container {
     max-width: 900px;
     margin: 30px auto;
     padding: 20px;
 }
 
-/* Post */
 .post {
     background: white;
     border-radius: 12px;
     padding: 20px;
     margin-bottom: 30px;
     box-shadow: 0 0 12px rgba(0,0,0,0.15);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: 0.3s;
 }
 
 .post:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.post h2 {
+    margin-top: 0;
 }
 
 .post img {
     width: 100%;
     border-radius: 12px;
     margin-top: 15px;
-    transition: transform 0.3s;
 }
 
-.post img:hover { transform: scale(1.05); }
-
-/* Buton */
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -79,15 +82,33 @@ nav a:hover {
     color: white;
     text-decoration: none;
     border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
     transition: 0.3s;
+    border: none;
+    font-size: 16px;
 }
 
-.btn:hover { background: #880e4f; transform: scale(1.05); }
+.btn:hover {
+    background: #880e4f;
+}
 
-/* Footer */
 footer {
     background: #111;
     color: white;
     text-align: center;
     padding: 20px;
+    margin-top: 40px;
+}
+
+input[type=text] {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
 }

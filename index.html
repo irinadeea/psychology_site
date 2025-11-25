@@ -4,87 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atestatul la Informatică – Arvinte Irina & Țancoc Andreea</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: "Segoe UI", Arial, sans-serif;
-            background: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background: linear-gradient(135deg, #4a148c, #880e4f);
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 42px;
-            font-weight: 700;
-        }
-
-        header p {
-            margin: 10px 0 0;
-            font-size: 18px;
-            opacity: 0.9;
-        }
-
-        nav {
-            background: #222;
-            padding: 15px;
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: #ff80ff;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 20px;
-        }
-
-        .post {
-            background: white;
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 30px;
-            box-shadow: 0 0 12px rgba(0,0,0,0.15);
-        }
-
-        .post h2 {
-            margin-top: 0;
-        }
-
-        .post img {
-            width: 100%;
-            border-radius: 12px;
-            margin-top: 15px;
-        }
-
-        footer {
-            background: #111;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
@@ -93,40 +14,41 @@
 </header>
 
 <nav>
-    <a href="#">Teorie</a>
-    <a href="#">Exerciții</a>
-    <a href="#">Sfaturi</a>
-    <a href="#">Setări limbă</a>
+    <a href="index.html">Acasă</a>
+    <a href="teorie.html">Teorie</a>
+    <a href="exercitii.html">Exerciții</a>
+    <a href="top.html">Top utilizatori</a>
+    <a href="login.html">Login</a>
 </nav>
 
 <div class="container">
 
-    <!-- Imagine 1 -->
     <div class="post">
-        <h2>Secțiunea 30</h2>
-        <p>Aici este introdus primul material din cadrul proiectului de psihologie.</p>
-        <img src="IMG_0330.jpeg" alt="Imagine 30">
+        <h2>Bine ai venit!</h2>
+        <p>Acesta este proiectul nostru complet pentru atestatul la informatică. Navighează folosind meniul de mai sus pentru teorie, exerciții și statistici despre utilizatori.</p>
+        <img src="IMG_0330.jpeg" alt="Imagine principală">
     </div>
 
-    <!-- Imagine 2 -->
     <div class="post">
-        <h2>Secțiunea 31</h2>
-        <p>A doua imagine prezentată ca parte a proiectului final la informatică.</p>
-        <img src="IMG_0331.jpeg" alt="Imagine 31">
+        <h2>Secțiuni de teorie</h2>
+        <p>Vezi materialele detaliate despre concepte de programare, algoritmi, structuri de date și tot ce ai nevoie pentru exerciții.</p>
+        <a class="btn" href="teorie.html">Accesează teorie</a>
     </div>
 
-    <!-- Imagine 3 -->
     <div class="post">
-        <h2>Secțiunea 32</h2>
-        <p>Ultima imagine utilizată în proiect.</p>
-        <img src="IMG_0332.jpeg" alt="Imagine 32">
+        <h2>Exerciții interactive</h2>
+        <p>Rezolvă exerciții online și urmărește-ți progresul zilnic.</p>
+        <a class="btn" href="exercitii.html">Începe exercițiile</a>
     </div>
 
 </div>
 
 <footer>
-    © 2025 – Proiect realizat de Arvinte Irina & Andreea Țancoc
+    © 2025 – Proiect realizat de Arvinte Irina & Andreea Țancoc | 
+    <a href="mailto:irinaarvinte0@gmail.com">Contact</a> | 
+    <a href="https://github.com/username">GitHub</a>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

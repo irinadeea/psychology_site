@@ -1,3 +1,4 @@
+/* Stil general */
 body {
     margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
@@ -5,25 +6,24 @@ body {
     color: #333;
 }
 
+/* Header */
 header {
     background: linear-gradient(135deg, #4a148c, #880e4f);
     color: white;
     text-align: center;
     padding: 50px 20px;
-    animation: fadeIn 2s;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 42px;
-    font-weight: 700;
-}
+header h1 { margin: 0; font-size: 42px; font-weight: 700; }
+header p { margin: 10px 0 0; font-size: 18px; opacity: 0.9; }
 
+/* Navigare */
 nav {
     background: #222;
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 20px;
+    padding: 10px 0;
 }
 
 nav a {
@@ -37,16 +37,17 @@ nav a {
 
 nav a:hover {
     background: #880e4f;
-    color: #fff;
     transform: scale(1.1);
 }
 
+/* Container */
 .container {
     max-width: 900px;
     margin: 30px auto;
     padding: 20px;
 }
 
+/* Post */
 .post {
     background: white;
     border-radius: 12px;
@@ -68,10 +69,9 @@ nav a:hover {
     transition: transform 0.3s;
 }
 
-.post img:hover {
-    transform: scale(1.05);
-}
+.post img:hover { transform: scale(1.05); }
 
+/* Buton */
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -82,19 +82,12 @@ nav a:hover {
     transition: 0.3s;
 }
 
-.btn:hover {
-    background: #880e4f;
-    transform: scale(1.05);
-}
+.btn:hover { background: #880e4f; transform: scale(1.05); }
 
+/* Footer */
 footer {
     background: #111;
     color: white;
     text-align: center;
     padding: 20px;
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
 }
